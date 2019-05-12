@@ -8,7 +8,31 @@
 class Series : public Base
 {
 public:
-	Series() {};
+	Series
+	(
+		std::string title,
+		int releaseYear,
+		std::string director,
+		std::vector<Category> categories,
+		std::vector<std::string> mainActors,
+
+		int numberOfSeasons,
+		int numberOfEpisodesPerSeason,
+		bool hasEnded
+		) :
+		Base
+		(
+			title,
+			releaseYear,
+			director,
+			categories,
+			mainActors
+		),
+
+		numberOfSeasons(numberOfSeasons),
+		numberOfEpisodesPerSeason(numberOfEpisodesPerSeason),
+		hasEnded(hasEnded)
+	{};
 	~Series() {};
 
 

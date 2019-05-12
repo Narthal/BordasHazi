@@ -1,0 +1,19 @@
+new movie entry
+title = Harcosok klubja
+releaseYear = 1999
+director = David Fincher
+categories = drama, action 
+mainActors = Brad Pitt, Edward Norton, Helena Bonham Carter
+numberOfSequel = 1
+openingWeekRevenue = 130000000
+studio = 20th century fox
+
+new series entry
+title = How i met your mother
+releaseYear = 2005
+director = Carter Bays
+categories = sitcom
+mainActors = Josh Radnor, Jason Segel, Neil Patrick Harris, Alyson Hannigan, Christin Milioti
+numberOfSeasons = 9
+numberOfEpisodesPerSeason = 20
+hasEnded = true

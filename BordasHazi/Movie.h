@@ -9,18 +9,42 @@
 class Movie : public Base
 {
 public:
-	Movie () {};
+	Movie
+	(
+		std::string title,
+		int releaseYear,
+		std::string director,
+		std::vector<Category> categories,
+		std::vector<std::string> mainActors,
+
+		int numberOfSequel,
+		int openingWeekRevenue,
+		std::string studio
+	):
+		Base
+		(
+			title,
+			releaseYear,
+			director,
+			categories,
+			mainActors
+		),
+
+		numberOfSequel(numberOfSequel),
+		openingWeekRevenue(openingWeekRevenue),
+		studio(studio)
+	{};
 	~Movie () {};
 
 	// Get / Set
 	// NumberOfSequel
-	int GetNumberOfSequel() { return numberOfSequel; }
+	int GetNumberOfSequel() const { return numberOfSequel; }
 	void SetNumberOfSequel(int value) { numberOfSequel = value; }
 	// OpeningWeekRevenue
-	int GetOpeningWeekRevenue() { return openingWeekRevenue; }
+	int GetOpeningWeekRevenue()const { return openingWeekRevenue; }
 	void SetOpeningWeekRevenue(int value) { openingWeekRevenue = value; }
 	// Studio
-	std::string GetStudio() { return studio; }
+	std::string GetStudio() const{ return studio; }
 	void SetStudio(std::string value) { studio = value; }
 
 private:

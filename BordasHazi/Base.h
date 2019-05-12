@@ -1,5 +1,4 @@
 #pragma once
-
 #include <string>
 #include <vector>
 
@@ -15,7 +14,20 @@ enum Category
 class Base
 {
 public:
-	Base() {};
+	Base
+	(
+		std::string title,
+		int releaseYear,
+		std::string director,
+		std::vector<Category> categories,
+		std::vector<std::string> mainActors
+	): 
+		title(title),
+		releaseYear(releaseYear),
+		director(director),
+		categories(categories),
+		mainActors(mainActors)
+	{};
 	~Base() {};
 
 	// Get / Set
